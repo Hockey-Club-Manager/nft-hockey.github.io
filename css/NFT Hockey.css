@@ -6,9 +6,9 @@ body {
 	background-color: #59a4fc;
 }
 
-.header {
-    display: flex;
-    padding-top: 20px;
+.navbar{
+	background-color: #59a4fc;
+	height: 100px;
 }
 
 .header img {
@@ -22,7 +22,6 @@ body {
 
 .menu li {
     list-style-type: none;
-    margin-top: 7;
     margin-right: 30px;
     margin-left: 30px;
    }
@@ -36,56 +35,52 @@ body {
 }
 
 .menu p {
-	margin-top: 7px;
 	color: #fff;
 	font-family: 'Teko', sans-serif;
 	font-size: 60px;
 	text-align: justify;
 }
 
-.hamburger-menu {
-	display: none;
-}
-
-.project-preview {
+.project-preview{
+	padding-top: 120px;
 	font-family: 'Teko', sans-serif;
 }
 
 .project-preview h1 {
 	color: #000;
-	font-size: 145px;
-	margin-top: -20px;
-	margin-bottom: -40px;
-	-webkit-text-stroke: 1px #fff
+	font-size: calc(65px + 60 * (100vw / 1280));
+	-webkit-text-stroke: 1px #fff;
+	line-height: 0.7;
 }
 
 .project-preview h2 {
 	color: #fff;
-	font-size: 125px;
-	margin-top: -40px;
-	margin-bottom: -40px;
+	font-size: calc(64px + 45 * (100vw / 1280));
+	line-height: 0.7;
 }
 
 .project-preview h3 {
 	color: #000;
-	font-size: 120px;
-	margin-top: -40px;
+	font-size: calc(60px + 45 * (100vw / 1280));
 	-webkit-text-stroke: 1px #fff;
+	line-height: 0.8;
 }
 
 .project-preview h4 {
 	color: #fff;
-	font-size: 108px;
-	margin-top: -40px;
+	font-size: calc(40px + 45 * (100vw / 1280));
+	line-height: 0.8;
+	margin-bottom: 10px;
 }
 
 .project-preview video {
 	width: 100%;
-	border-radius: 60px;
+	border-radius: 12%;
+	align-self: flex-end;
 }
 
 .stick {
-	display: flex;
+	position: absolute;
 	width: 100%;
 }
 
@@ -97,15 +92,20 @@ body {
 }
 
 .first-paragraph {
-	position: absolute;
+	margin-top: 50px;
 	top: 20%;
 	text-align: left;
-	width: 83%;
+	width: 90%;
+}
+
+.second-paragraph {
+	margin-left: 12px;
 }
 
 .near-hack-photo {
 	float: left;
 	margin-right: 10px;
+	margin-left: 12px;
 	width: 50%;
 }
 
