@@ -6,43 +6,60 @@ body {
 	background-color: #59a4fc;
 }
 
-.navbar{
+.navbar {
 	background-color: #59a4fc;
-	height: 100px;
 }
 
-.header img {
-    margin-left: 40px;
-    margin-right: -40px;
+.navbar i {
+	color: #fff;
+    font-size: 20px;
 }
 
 .menu {
 	display: flex;
+	margin-top: 20px;
+	background-color: #59a4fc;
 }
 
 .menu li {
     list-style-type: none;
     margin-right: 30px;
     margin-left: 30px;
+    margin: 0px, 
    }
 
 .menu li a {
 	color: #fff;
 	text-transform: uppercase;
 	font-family: 'Teko', sans-serif;
-	font-size: 70px;
+	font-size: calc(35px + 30 * (100vw / 1280));
 	text-align: justify;
+	line-height: 40px;
 }
 
 .menu p {
 	color: #fff;
 	font-family: 'Teko', sans-serif;
-	font-size: 60px;
+	font-size: calc(20px + 35 * (100vw / 1280));
 	text-align: justify;
+	margin-top: 3px;
+	line-height: 40px;
+}	
+
+@media screen and (min-width: 960px) {
+  .menu a {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .menu p {
+    display: none;
+  }
 }
 
 .project-preview{
-	padding-top: 120px;
+	padding-top: 25px;
 	font-family: 'Teko', sans-serif;
 }
 
@@ -154,7 +171,7 @@ body {
 	text-align: center;
 }
 
-i {
+.social-media i {
 	font-size: 40px;
 	text-align: center;
 	color: #59a4fc;
@@ -164,7 +181,7 @@ i {
     margin: 0px 10px;
 }
 
-i:hover {
+.social-media i:hover {
 	color: #fff;
 }
 
@@ -178,6 +195,8 @@ i:hover {
 .contacts i {
 	color: #fff;
     font-size: 40px;
+    cursor: pointer;
+    transition: all 0.5s ease;
 }
 
 .contacts i:hover {
