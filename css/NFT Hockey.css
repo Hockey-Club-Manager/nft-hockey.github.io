@@ -192,10 +192,6 @@ body {
 	margin-top: 50px;
 }
 
-.contacts {
-	margin-bottom: 150px;
-}
-
 .contacts i {
 	color: #fff;
 	font-size: 40px;
@@ -208,17 +204,27 @@ body {
 }
 
 .flag {
-	width: 100%;
-	height: 120px;
+	width: 17%;
+	height: 100px;
 	background: rgb(230,231,59);
     background: linear-gradient(0deg, rgba(230,231,59,1) 50%, rgba(0,22,255,1) 50%);
 }
 
+@media screen and (max-width: 1620px) {
+	.flag {
+		width: 100%;
+	}
+	.contacts {
+	margin-bottom: 130px;
+	}
+}
+
+
 .flag a {
 	margin: auto;
-	margin-top: 5px;
 }
 
 .flag p {
-	font-size: 30px;
+	margin-top: 5px;
+	font-size: 22px;
 }
