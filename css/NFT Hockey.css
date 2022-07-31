@@ -3,146 +3,77 @@ html {
 }
 
 body {
-	background-color: #59a4fc;
+	background-color: #404045;
 }
 
-.navbar {
-	background-color: #59a4fc;
-}
-
-.navbar i {
-	color: #fff;
-	font-size: 20px;
-}
-
-.menu {
-	display: flex;
-	margin-top: 20px;
-	background-color: #59a4fc;
-}
-
-.menu li {
-	list-style-type: none;
-	margin-right: 30px;
-	margin-left: 30px;
-	margin: 0px, 
-}
-
-.menu li a {
-	color: #fff;
-	text-transform: uppercase;
-	font-family: 'Teko', sans-serif;
-	font-size: calc(35px + 30 * (100vw / 1280));
-	text-align: justify;
-	line-height: 40px;
-}
-
-.menu p {
-	color: #fff;
-	font-family: 'Teko', sans-serif;
-	font-size: calc(20px + 35 * (100vw / 1280));
-	text-align: justify;
-	margin-top: 3px;
-	line-height: 40px;
-}	
-
-@media screen and (min-width: 960px) {
-	.menu a {
-		margin-top: 10px;
-	}
-}
-
-@media screen and (max-width: 992px) {
-	.menu p {
-		display: none;
-	}
-}
-
-.project-preview{
+header {
 	padding-top: 25px;
-	font-family: 'Teko', sans-serif;
 }
 
-.project-preview h1 {
-	color: #000;
-	font-size: calc(65px + 60 * (100vw / 1280));
-	-webkit-text-stroke: 1px #fff;
-	line-height: 0.7;
-}
-
-.project-preview h2 {
-	color: #fff;
-	font-size: calc(64px + 45 * (100vw / 1280));
-	line-height: 0.7;
-}
-
-.project-preview h3 {
-	color: #000;
-	font-size: calc(60px + 45 * (100vw / 1280));
-	-webkit-text-stroke: 1px #fff;
-	line-height: 0.8;
-}
-
-.project-preview h4 {
-	color: #fff;
-	font-size: calc(40px + 45 * (100vw / 1280));
-	line-height: 0.8;
-	margin-bottom: 10px;
-}
-
-.project-preview video {
-	width: 100%;
-	border-radius: 12%;
-	align-self: flex-end;
-}
-
-.stick {
-	position: absolute;
-	width: 100%;
-}
-
-.history p {
-	line-height: 1;
-	color: #fff;
-	font-family: 'Teko', sans-serif;
-	font-size: calc(20px + 18 * (100vw / 1280));
-}
-
-.first-paragraph {
-	margin-top: 50px;
-	top: 20%;
-	text-align: left;
-	width: 90%;
-}
-
-.second-paragraph {
-	margin-left: 12px;
-}
-
-.near-hack-photo {
-	float: left;
-	margin-right: 10px;
-	margin-left: 12px;
-	width: 50%;
-}
-
-.roadmap h2 {
+h1 {
+	padding-top: 25px;
 	font-size: 100px;
+	color: #fff;
+	font-family: 'Orbitron';
+}
+
+@media screen and (max-width: 1200px) {
+	.picture {
+	display: none;
+	}
+}
+
+p {
+	padding-top: 10px;
+	font-size: 40px;
+	color: #fff;
+	font-family: 'Montserrat';
+}
+
+button {
+	cursor: pointer;
+	margin: 20px;
+	height: 60px;
+	width: 350px;
+	background-color: transparent;
+	border-radius: 50px;
+	border: solid 2px;
+	border-color: #fff;
 	text-align: center;
 	color: #fff;
-	font-family: 'Teko', sans-serif;
+	font-family: 'Montserrat';
+	font-size: 30px;
+	font-weight: bold;
+	background-size: 300% 100%;
 }
 
-.roadmap img {
-	padding: 25px 0px;
+.filled {
+	 background-color: #FAC77A;
+	 border-color: transparent;
 }
 
-.team h2 {
-	font-size: 100px;
+
+button:hover {
+	background-color: #8DCFF6;
+}
+
+h2 {
 	text-align: center;
+	font-size: 70px;
 	color: #fff;
-	font-family: 'Teko', sans-serif;
+	font-family: 'Orbitron', sans-serif;
 	padding-top: 40px;
+}
+
+/*.about p {
+	text-align: center
+}*/
+
+.about button {
+	display: block;
+	margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .pearson-circle {
@@ -162,7 +93,7 @@ body {
 .team h6 {
 	font-size: 35px;
 	font-weight: bold;
-	color: #59a4fc;
+	color: #404045;
 	-webkit-text-stroke: 1px #fff;
 	font-family: 'Teko', sans-serif;
 }
@@ -174,7 +105,7 @@ body {
 .social-media i {
 	font-size: 40px;
 	text-align: center;
-	color: #59a4fc;
+	color: #404045;
 	-webkit-text-stroke: 1px #fff;
 	cursor: pointer;
 	transition: all 0.5s ease;
@@ -200,31 +131,11 @@ body {
 }
 
 .contacts i:hover {
-	color: #59a4fc;
-}
-
-.flag {
-	width: 17%;
-	height: 100px;
-	background: rgb(230,231,59);
-    background: linear-gradient(0deg, rgba(230,231,59,1) 50%, rgba(0,22,255,1) 50%);
+	color: #8DCFF6;
 }
 
 @media screen and (max-width: 1620px) {
-	.flag {
-		width: 100%;
-	}
 	.contacts {
 	margin-bottom: 130px;
 	}
-}
-
-
-.flag a {
-	margin: auto;
-}
-
-.flag p {
-	margin-top: 5px;
-	font-size: 22px;
 }
