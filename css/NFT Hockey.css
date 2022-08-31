@@ -30,6 +30,10 @@ p {
 	font-family: 'Montserrat';
 }
 
+.header p {
+	font-style: italic;
+}
+
 button {
 	cursor: pointer;
 	margin: 20px;
